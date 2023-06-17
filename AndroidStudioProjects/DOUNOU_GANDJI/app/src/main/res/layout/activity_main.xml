@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/don"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_header"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="25dp"
+        android:autofillHints=""
+        android:background="@drawable/input_big"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="10px"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        tools:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_username"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="13dp"
+        android:autofillHints=""
+        android:background="@drawable/input_big"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10px"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_email"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/input_big"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10px"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_password"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/input_big"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10px"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:shadowColor="@color/black"
+        android:text="Sign up"
+        app:backgroundTint="@color/cardview_dark_background" />
+
+    <TextView
+        android:id="@+id/already_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already register ? Sign in"
+        android:textSize="24sp"
+        android:layout_below="@id/btn_register"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go_to_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/already_r"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Sign in"
+        app:backgroundTint="@color/cardview_dark_background" />
+
+
+</RelativeLayout>

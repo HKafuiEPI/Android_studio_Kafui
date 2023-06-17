@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@drawable/ddw"
+    tools:context=".MainActivity5">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="5dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="112dp"
+        android:src="@drawable/attieke"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/girdData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ATTIEKE"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:id="@+id/receipie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/girdData"
+        android:text="RECEIPIE"
+        android:textSize="20dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="393dp"
+        android:layout_below="@id/receipie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:text="Prepare a marinade by mixing lemon juice, olive oil, minced garlic, chili, salt and pepper. Brush the fresh fish with the marinade and grill for about 10 minutes on each side until cooked. Serve the grilled fish with steamed Attieke and fresh vegetables, such as carrots, cucumbers, tomatoes and onions, cut into strips.">
+    </TextView>
+
+
+</RelativeLayout>

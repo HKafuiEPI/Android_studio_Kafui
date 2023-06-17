@@ -1,0 +1,3 @@
+0 Chaise
+1 Lunette
+2 Téléphone
